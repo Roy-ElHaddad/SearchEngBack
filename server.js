@@ -1,6 +1,7 @@
 import config from "./configure.js";
 import express  from "express"
 import cors from "cors"
+import fetch from "node-fetch"
 
 const app = express()
 let param = ''
@@ -37,4 +38,4 @@ app.get("/images", async (req, res) =>{
     }    
 })
 
-app.listen(5000)
+app.listen(8080)
